@@ -21,4 +21,8 @@
         android:layout_height="wrap_content"
         android:text="눌러보세요" />
 
+    <include layout="@layout/i_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>

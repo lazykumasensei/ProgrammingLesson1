@@ -15,6 +15,7 @@ import android.os.Bundle
 import android.widget.TextView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.i_category.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,10 +28,14 @@ class MainActivity : AppCompatActivity() {
         aMain_button.setOnClickListener {
             //Toast.makeText(this, "버튼이 클릭됬어요! 신기한 Listener!", Toast.LENGTH_SHORT).show()
             //aMain_text.text = "버튼이 클릭됬어요!"
+            /*
             val textView = findViewById<TextView>(R.id.aMain_text)
             if(textView != null) {
                 textView.text = "findViewById로 바꿔봤어요"
             }
+            */
+            val value = iCategory_edit.text
+            Toast.makeText(this, value, Toast.LENGTH_SHORT).show()
         }
     }
 }
